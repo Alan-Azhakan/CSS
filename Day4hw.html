@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT CARD</title>
+    <style>
+        h1{
+            text-align: center;
+            color: black;
+            font-size: 45px;
+            letter-spacing: 5px;
+             
+        }
+         
+        .card{
+            position: relative;
+            border: 5px solid black;
+            width: 1000px;
+            height: auto;
+            margin: 100px;
+            padding: 0px;
+            border-radius: 20px;
+            background-color: #878b8f;
+            overflow: auto;
+        }
+        img{
+            float: left;
+            height: 241px;
+            width: 241px;
+            border-radius: 300px;
+            border: 2px ridge black;
+        }
+        .contact{
+            position: absolute;
+            top: 40px;
+            right: 10px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        .n{
+            font-size: 25px;
+            color: rgb(17, 13, 29);
+        }
+        .view{
+            background-color: #999999;
+            border: 10px ridge black;
+            margin: 50px;
+        }
+        body{
+            background-color: #000000;
+        }
+        .line{
+             position: absolute;
+             top: 0px;
+             bottom: 0px;
+             right: 280px;
+             border-left: 4px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="view">
+    <h1><b><u>COMPANY CONTACT CARD</u></b></h1>
+    <div class="card">
+
+    <div class="profile">
+    <img src="data:image/jpeg;base64,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" alt=""> 
+    </div>
+
+    <div class="name">
+        <p class="n"><b><u>Alan Azhakan</u></b></p>
+        <p><b>Beginner Web Developer</b></p>
+        <p>Alan Azhakan is a dedicated developer with over 0 years of experience <p>in front-end and back-end web technologies.
+        He specializes in creating</p> responsive and dynamic websites with a focus on user experience.
+        </p>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="contact">
+        <p><b>Contact Information:</b></p>
+        <p>Email:alanazhakan2022@gmail.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>LinkedIn: linkedin.com/in/alanazhakan</p>
+    </div>
+    </div>
+</div>
+</body>
+</html>
