@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .right{
+      width: 45%;
+      height: 100vh;
+      float: right;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .left{
+      width:  50%;
+      height: 100vh;
+      float: left;
+      background: linear-gradient(to bottom, rgb(56, 195, 234),rgb(224, 194, 133));
+     }
+    h1{
+      color: orangered;
+    }
+    button{
+      background-color: orangered;
+      color: white;
+      height: 40px;
+      width: 70%;
+      border: none;
+      
+    }
+    #email, #password{
+      width: 70%;
+      height: 40px;
+      border: 1px solid gray;
+    }
+     @media only screen and (max-width: 1200px) {
+      .left { width: 45%; }
+      .right { width: 50%; }
+    }
+
+    @media only screen and (max-width: 1100px) {
+      .left { width: 40%; }
+      .right { width: 50%; }
+    }
+
+    @media only screen and (max-width: 1000px) {
+      .left { width: 36%; }
+      .right { width: 60%; }
+    }
+
+    @media only screen and (max-width: 900px) {
+      .left { width: 22%; }
+      .right { width: 70%; }
+    }
+
+    @media only screen and (max-width: 800px) {
+      .left { width: 16%; }
+      .right { width: 80%; }
+    }
+
+    @media only screen and (max-width: 700px) {
+      .left { width: 10%; }
+      .right { width: 85%; }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .left { width: 0%; display: none; }  
+      .right { width: 90%; height:100vh; }
+    }
+  </style>
+</head>
+<body>
+  <div class="left"></div>
+  <div class="right">
+
+    <h1 >Login Form</h2>
+    <form action="" >
+      <label for="email">E-mail : </label><br>
+      <input type="email"   id="email" placeholder="Enter your email" required><br><br>
+
+      <label for="password">Password : </label><br>
+      <input type="password" name="password" id="password" placeholder="Enter your password" required>
+
+      <h4><input type="checkbox" name="" id="">Remember me</h4>
+      <button class="button" type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
